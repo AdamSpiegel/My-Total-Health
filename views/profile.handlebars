@@ -1,0 +1,130 @@
+<div class="row">
+  <div class="col-auto">
+    <h2>Welcome, {{name}}!</h2>
+  </div>
+</div>
+
+<div class="row mt-4">
+  <div class="col-md-6">
+    <h3>My Wellness Profile</h3>
+
+    <form class="form new-project-form">
+      <div class="form-group">
+        <label for="project-name">Please enter today's date and time.</label>
+        <input class="form-input" type="text" id="date" name="date" />
+      </div>
+      <div class="form-group">
+        <label for="project-funding">Did you complete any weight, strength, or resistance training today? Please describe.</label>
+        <input class="form-input" type="form-input" id="strength-training" name="strength-training" />
+      </div>
+      <div class="form-group">
+        <label for="project-desc">Did you complete any cardio training today? Please describe.</label>
+        <textarea class="form-input" id="cardio" name="cardio"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="project-desc">Did you complete any flexibility training today (stretching, yoga, pilates, etc.)? Please describe.</label>
+        <textarea class="form-input" id="flexibility" name="flexibility"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="project-desc">Did you complete any healthy mindset training today (meditation, journaling, reading, reflection, turning off tv/phone, etc)? Please describe.</label>
+        <textarea class="form-input" id="mindset" name="mindset"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="project-desc">Did you make and/or stay consistent with any other healthy lifestlye changes today? Please describe.</label>
+        <textarea class="form-input" id="lifestyle" name="lifestyle"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Save</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="row mt-4">
+  <div class="col-md-6">
+    <h3>My Biometrics</h3>
+
+    <form class="form new-project-form">
+      <div class="form-group">
+        <label for="project-name">What is your current weight today?</label>
+        <input class="form-input" type="form-input" id="project-name" name="project-name" />
+      </div>
+      <div class="form-group">
+        <label for="project-funding">What is your height?</label>
+        <input class="form-input" type="number" id="height" name="height" />
+      </div>
+      <div class="form-group">
+        <label for="project-desc">What is your current (average) blood pressure?</label>
+        <textarea class="form-input" id="blood-pressure" name="blood-pressure"></textarea>
+      </div>
+    <div class="form-group">
+        <label for="project-desc">What is your current resting heart rate?</label>
+        <textarea class="form-input" id="rhr" name="rhr"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="project-desc">What is your current BMI?</label>
+        <textarea class="form-input" id="bmi" name="bmi"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="project-desc">What is your current Body Fat %?</label>
+        <textarea class="form-input" id="bodyfat" name="bodyfat"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Save</button>
+      </div>
+    </form>
+  </div>
+
+   <div class="row mt-4">
+  <div class="col-md-6">
+    <h3>My Nutrition</h3>
+    
+    <form class="form new-project-form">
+      <div class="form-group">
+        <label for="project-name">Please enter your FOOD log for info for today.</label>
+        <input class="form-input" type="form-input" id="foodlog" name="foodlog" />
+      </div>
+      <div class="form-group">
+        <label for="project-funding">What was your total water intake today (oz)?</label>
+        <input class="form-input" type="number" id="water" name="water" />
+      </div>
+      <div class="form-group">
+        <label for="project-desc">What was your total caloric info ?</label>
+        <textarea class="form-input" id="blood-pressure" name="blood-pressure"></textarea>
+      </div>
+    <div class="form-group">
+        <label for="project-desc">What is your current resting heart rate?</label>
+        <textarea class="form-input" id="rhr" name="rhr"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="project-desc">What is your current BMI?</label>
+        <textarea class="form-input" id="bmi" name="bmi"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="project-desc">What is your current Body Fat %?</label>
+        <textarea class="form-input" id="bodyfat" name="bodyfat"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Save</button>
+      </div>
+    </form>
+  </div>
+
+  {{!-- {{#if projects.length}}
+  <div class="col-md-6 project-list">
+    <h3>Current Projects:</h3>
+
+    {{#each projects as |project|}}
+    <div class="row mb-2">
+      <div class="col-md-8">
+        <h4><a href="/project/{{project.id}}">{{project.name}}</a></h4>
+      </div>
+      <div class="col-md-4">
+        <button class="btn btn-sm btn-danger" data-id="{{project.id}}">DELETE</button>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}
+</div>
+
+<script src="./js/profile.js"></script> --}}
