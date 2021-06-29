@@ -3,6 +3,7 @@ require('dotenv').config();
 
 let sequelize;
 
+
 if (process.env.healthtracker_db_URL) {
   sequelize = new Sequelize(process.env.healthtracker_db_URL);
 } else {
@@ -16,6 +17,7 @@ if (process.env.healthtracker_db_URL) {
       port: 3306
     }
   );
+
 }
 
 module.exports = sequelize;
