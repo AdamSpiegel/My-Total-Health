@@ -8,20 +8,20 @@ class Biometrics extends Model { }
 
 Biometrics.init({
     // I think some of this is redundant, do we need lines 11-28 for this?
-    id: {
+    bio_id: {
         type: DataTypes.INTEGER,
         allowNull: false,
         primaryKey: true,
         autoIncrement: true,
     },
-    name: {
+    bio_name: {
         type: DataTypes.STRING,
         allowNull: false,
     },
-    description: {
+    bio_description: {
         type: DataTypes.STRING,
     },
-    date_created: {
+    bio_date_created: {
         type: DataTypes.DATE,
         allowNull: false,
         defaultValue: DataTypes.NOW
