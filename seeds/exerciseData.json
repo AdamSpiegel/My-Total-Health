@@ -1,0 +1,29 @@
+[
+  {
+    "exercise_name": "Strength Training Day 1",
+    "exercise_description": "Weight Training - Chest/Back - 45 mins",
+    "exercise_date_created": "July 1, 2021",
+    "strength_training": "Bench Press, Lat Pulldown, Chest Flies, Single Arm Rows, Push Ups, Pull Ups ",
+    "cardio": "None",
+    "flexibility": "10 minute post-stretch",
+    "mindset": "Read for 30 minutes without TV to finish the day"
+  },
+  {
+    "exercise_name": "Cardio Training Day 1",
+    "exercise_description": "Cardio only exercises today - 1 hour",
+    "exercise_date_created": "July 2, 2021",
+    "strength_training": "None",
+    "cardio": "Treadmill-20 mins, Elliptical-30 mins, Jump Rope-10 mins",
+    "flexibility": "10 minute pre and post stretch",
+    "mindset": "Early morning meditation upon waking up"
+  },
+  {
+    "exercise_name": "Flexibility Training Day 1",
+    "exercise_description": "Yoga and Stretching",
+    "exercise_date_created": "July 3, 2021",
+    "strength_training": "None",
+    "cardio": "None",
+    "flexibility": "Yoga-45 mins, Morning and Evening total body stretch routine",
+    "mindset": "Drawing while listening to motivational podcasts"
+  }
+]

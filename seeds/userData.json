@@ -1,0 +1,17 @@
+[
+    {
+      "name": "Adam Spiegel",
+      "email": "adamspiegel23@gmail.com",
+      "password": "Pass1234"
+    },
+    {
+      "name":"Derek Jeter", 
+      "email": "DJ02@yahoo.com",
+      "password": "Yankees1234"
+    },
+    {
+      "name": "Eli Manning",
+      "email": "EManning@aol.com",
+      "password": "Giants1234"
+    }
+  ]
