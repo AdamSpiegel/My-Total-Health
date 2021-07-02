@@ -27,7 +27,6 @@ Exercise.init({
         defaultValue: DataTypes.NOW
     },
     // exercises now? allow for input of type of exercise?
-    // strength, cardio, flex, mindfull
     strength_training: {
         type: DataTypes.STRING,
         allowNull: true,
@@ -36,11 +35,11 @@ Exercise.init({
         type: DataTypes.STRING,
         allowNull: true,
     },
-    flexible: {
+    flexibility: {
         type: DataTypes.STRING,
         allowNull: true,
     },
-    mindfullness: {
+    mindset: {
         type: DataTypes.STRING,
         allowNull: true,
     },
@@ -50,7 +49,7 @@ Exercise.init({
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'project',
+        modelName: 'exercises',
     }
 )
 

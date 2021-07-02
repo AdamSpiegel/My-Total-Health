@@ -1,0 +1,23 @@
+[
+  {
+    "nutrition_name": "Ham/Egg/Cheese Omelette, Wheat Toast, 8oz Orange Juice",
+    "nutrition_description": "Breakfast",
+    "nutrition_date_created": "July 1, 2021",
+    "caloric_intake": "850",
+    "cups_water": "None"
+  },
+  {
+    "nutrition_name": "Peanut Butter Jelly Sandwich, Strawberries, Banana, Potato Chips, Milk, 16oz water ",
+    "nutrition_description": "Lunch",
+    "nutrition_date_created": "July 1, 2021",
+    "caloric_intake": "960",
+    "cups_water": "2"
+  },
+  {
+    "nutrition_name": "Filet Mignon, Asparagus, Mashed Potatoes, (2) Beers, Tiramisu, 16oz water",
+    "nutrition_description": "Dinner",
+    "nutrition_date_created": "July 1, 2021",
+    "caloric_intake": "1650",
+    "cups_water": "2"
+  }
+]
