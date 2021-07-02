@@ -2,16 +2,46 @@
 
 const User = require('./User');
 const Biometrics = require('./biometrics');
+
 const Exercise = require('./exercises');
 const Nutrition = require('./nutrition')
 
-User.hasMany(Project, {
+// const Exercises = require('./exercises');
+// const Nutrition = require('./nutrition');
+// const Exercise = require('./exercises');
+
+
+// use 
+// build out index to show different connections
+// on delete cascade for all of them
+User.hasMany(Exercise, {
     foreignKey: 'user_id',
     onDelete: 'CASCADE'
 });
 
-Project.belongsTo(User, {
+User.hasMany(Biometrics, {
+    foreignKey: 'user_id',
+    onDelete: 'CASCADE'
+});
+
+User.hasMany(Nutrition, {
+    foreignKey: 'user_id',
+    onDelete: 'CASCADE'
+});
+
+Exercise.belongsTo(User, {
     foreignKey: 'user_id'
 });
 
-module.exports = { User, Exercise, Biometrics, Nutrition };
+Biometrics.belongsTo(User, {
+    foreignKey: 'user_id'
+});
+
+Nutrition.belongsTo(User, {
+    foreignKey: 'user_id'
+});
+
+
+
+module.exports = { User, Exercises, Biometrics, Nutrition };
+

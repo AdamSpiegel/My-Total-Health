@@ -8,26 +8,25 @@ class Exercise extends Model { }
 
 Exercise.init({
     // I think some of this is redundant, do we need lines 11-28 for this?
-    id: {
+    exercise_id: {
         type: DataTypes.INTEGER,
         allowNull: false,
         primaryKey: true,
         autoIncrement: true,
     },
-    name: {
+    exercise_name: {
         type: DataTypes.STRING,
         allowNull: false,
     },
-    description: {
+    exercise_description: {
         type: DataTypes.STRING,
     },
-    date_created: {
+    exercise_date_created: {
         type: DataTypes.DATE,
         allowNull: false,
         defaultValue: DataTypes.NOW
     },
     // exercises now? allow for input of type of exercise?
-    // strength, cardio, flex, mindfull
     strength_training: {
         type: DataTypes.STRING,
         allowNull: true,
@@ -36,11 +35,11 @@ Exercise.init({
         type: DataTypes.STRING,
         allowNull: true,
     },
-    flexible: {
+    flexibility: {
         type: DataTypes.STRING,
         allowNull: true,
     },
-    mindfullness: {
+    mindset: {
         type: DataTypes.STRING,
         allowNull: true,
     },

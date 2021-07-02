@@ -1,3 +1,6 @@
+
+// calorie/nutrition apis
+
 // models push on 6-29
 // what is your total caloric intake?
 // how about water?
@@ -8,23 +11,25 @@ const sequelize = require('../config/connection');
 class Nutrition extends Model { }
 
 Nutrition.init({
-    id: {
+    nutrition_id: {
         type: DataTypes.INTEGER,
         allowNull: false,
         primaryKey: true,
         autoIncrement: true,
     },
-    name: {
+    nutrition_name: {
         type: DataTypes.STRING,
         allowNull: false,
     },
-    description: {
+    nutrition_description: {
         type: DataTypes.STRING,
     },
-    date_created: {
+    nutrition_date_created: {
         type: DataTypes.DATE,
         allowNull: false,
         defaultValue: DataTypes.NOW,
+        // unalterable, maybe have user enter time and date?
+        // add a now feature
     },
     caloric_intake: {
         type: DataTypes.INTEGER,
@@ -45,7 +50,10 @@ Nutrition.init({
 
 )
 
+
 module.exports = Nutrition;
 
 // calorine/nutrition apis
 // >>>>>>> main
+
+
