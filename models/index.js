@@ -2,7 +2,8 @@
 
 const User = require('./User');
 const Biometrics = require('./biometrics');
-const Exercises = require('./exercises');
+const Exercise = require('./exercises');
+const Nutrition = require('./nutrition')
 
 User.hasMany(Project, {
     foreignKey: 'user_id',
@@ -13,4 +14,4 @@ Project.belongsTo(User, {
     foreignKey: 'user_id'
 });
 
-module.exports = { User, Exercises, Biometrics };
+module.exports = { User, Exercise, Biometrics, Nutrition };

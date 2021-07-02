@@ -40,10 +40,12 @@ Nutrition.init({
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'project',
+        modelName: 'nutrition',
     }
 
 )
+
+module.exports = Nutrition;
 
 // calorine/nutrition apis
 // >>>>>>> main
