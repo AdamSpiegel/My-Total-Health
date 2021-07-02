@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Biometrics, User } = require('../models');
+const { Biometrics, User, Exercise, Nutrition } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
@@ -35,7 +35,7 @@ router.get('/biometrics/:id', async (req, res) => {
       ],
     });
 
-    const biometrics = biometricData.get({ plain: true });
+    const biometric = biometricData.get({ plain: true });
 
     res.render('biometrics', {
       ...biometric,
@@ -61,6 +61,83 @@ router.get('/profile', withAuth, async (req, res) => {
     });
   } catch (err) {
     res.status(500).json(err);
+  }
+});
+
+router.get('/', async (req, res) => {
+  try {
+    const exerciseData = await Exercise.findAll({
+      include: [
+        {
+          model: Nutrition,
+          attributes: ['name', 'description'],
+        },
+      ],
+    });
+
+    const exercises = exerciseData.map((exercise) =>
+      exercise.get({ plain: true })
+    );
+
+    res.render('homepage', {
+      exercises,
+      loggedIn: req.session.loggedIn,
+    });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
+// GET one exercise
+router.get('/exercises/:id', async (req, res) => {
+  // If the user is not logged in, redirect the user to the login page
+  if (!req.session.loggedIn) {
+    res.redirect('/login');
+  } else {
+    // If the user is logged in, allow them to view the exercises
+    try {
+      const exerciseData = await Exercise.findByPk(req.params.id, {
+        include: [
+          {
+            model: nutrition,
+            attributes: [
+              'id',
+              'name',
+              'description',
+              'date_created',
+              'caloric_intake',
+              'cups_water',
+            ],
+          },
+        ],
+      });
+      const exercise = exerciseData.get({ plain: true });
+      res.render('exercises', { exercises, loggedIn: req.session.loggedIn });
+    } catch (err) {
+      console.log(err);
+      res.status(500).json(err);
+    }
+  }
+});
+
+// GET on ly nutrition information
+router.get('/nutrition/:id', async (req, res) => {
+  // If the user is not logged in, redirect the user to the login page
+  if (!req.session.loggedIn) {
+    res.redirect('/login');
+  } else {
+    // If the user is logged in, allow them to view the nutrition information
+    try {
+      const nutritionData = await Nutrition.findByPk(req.params.id);
+
+      const nutrition = nutritionData.get({ plain: true });
+
+      res.render('nutrition', { nutrition, loggedIn: req.session.loggedIn });
+    } catch (err) {
+      console.log(err);
+      res.status(500).json(err);
+    }
   }
 });
 

@@ -2,9 +2,14 @@
 
 const User = require('./User');
 const Biometrics = require('./biometrics');
-const Exercises = require('./exercises');
-const Nutrition = require('./nutrition');
+
 const Exercise = require('./exercises');
+const Nutrition = require('./nutrition')
+
+// const Exercises = require('./exercises');
+// const Nutrition = require('./nutrition');
+// const Exercise = require('./exercises');
+
 
 // use 
 // build out index to show different connections
@@ -36,4 +41,7 @@ Nutrition.belongsTo(User, {
     foreignKey: 'user_id'
 });
 
+
+
 module.exports = { User, Exercises, Biometrics, Nutrition };
+
