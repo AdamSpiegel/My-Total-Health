@@ -6,9 +6,9 @@ const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
-const Exercises = require('./exercises');
-const Biometrics = require('./biometrics');
-const Nutrition = require('./nutrition');
+// const Exercise = require('./exercises');
+// const Biometrics = require('./biometrics');
+// const Nutrition = require('./nutrition');
 
 // do I need to extend a Model to check password here?
 class User extends Model {
