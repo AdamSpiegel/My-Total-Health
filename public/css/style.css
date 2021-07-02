@@ -1,3 +1,29 @@
+:root {
+    --boston-blue: #3D86AE;
+    --sea-buckthorn: #F8A538;
+    --gray-nurse: #DEE7E0;
+
+}
+
+header {
+    background-color: var(--gray-nurse);
+    text-decoration: none;
+}
+
 .title {
     font-family: 'Dancing Script', cursive;
+    color: var(--boston-blue);
 }
+
+.total {
+    font-family: 'Dancing Script', cursive;
+    color: var(--sea-buckthorn)
+}
+
+a:link.header,
+a:visited.header,
+a:hover.header,
+a:active.header {
+    text-decoration: none;
+}
+
