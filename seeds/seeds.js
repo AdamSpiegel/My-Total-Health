@@ -9,22 +9,22 @@ const nutritionData = require('./nutritionData.json')
 const seedDatabase = async () => {
     await sequelize.sync({ force: true });
 
-     User = await User.bulkCreate(userData, {
+    const userSeed = await User.bulkCreate(userData, {
         individualHooks: true,
         returning: true,
     });
 
-     Biometrics = await Biometrics.bulkCreate(biometricsData, {
+     const biometricsSeed = await Biometrics.bulkCreate(biometricsData, {
         individualHooks: true,
         returning: true,
     });
 
-     Exercise = await Exercise.bulkCreate(exerciseData, {
+     const exerciseSeed = await Exercise.bulkCreate(exerciseData, {
         individualHooks: true,
         returning: true,
     });
 
-     Nutrition = await Nutrition.bulkCreate(nutritionData, {
+     const nutritionSeed = await Nutrition.bulkCreate(nutritionData, {
         individualHooks: true,
         returning: true,
     });
