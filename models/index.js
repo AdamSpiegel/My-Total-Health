@@ -1,4 +1,4 @@
-const User = require('./User');
+const User = require('./user');
 const Biometrics = require('./biometrics');
 const Exercise = require('./exercises');
 const Nutrition = require('./nutrition')
