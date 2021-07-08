@@ -3,37 +3,37 @@ A web application designed to help the user organize all aspects of their person
 
 ## Table of Contents
 <!-- fill out once everything else is finalized -->
-1. Description (#description)
-2. App & Screenshots (#deployed-app-&-screenshots)
-3. Considerations (#considerations)
-4. License (#license-info)
-5. Contributors (#contributors)
+1. [Description](#description)
+2. [App & Screenshots](#deployed-app-&-screenshots)
+3. [Considerations](#considerations)
+4. [License](#license-info)
+5. [Contributors](#contributors)
 
-## Description
+## <a name="description"></a>Description
 My Total Health takes in user info on exercise, biometrics and nutritional data then saves it in a database where it can be accessed and compared over time.<br>
 
 Tech used: Bcrpyt, chart.js, .env, Express.js, Express-Sessions, Express-Handlebars, Heroku, JavaScript, MySQL, MySQL Workbench, NodeJS, npm and Sequelize.
  <!--add more as we think of them  -->
 
-## Deployed App & Screenshots
+## <a name="deployed-app-&-screenshots"></a>Deployed App & Screenshots
 <!-- links here -->
 <!-- screenshots with it -->
 Deployed Link https://whispering-sea-14639.herokuapp.com/<br>
 
 Git Hub Link  https://github.com/AdamSpiegel/My-Total-Health<br>
 
-![screenshot]![snip 7-9](https://user-images.githubusercontent.com/80430372/124977553-9a661280-dffe-11eb-9550-46cccfaa3a24.PNG)
+![screenshot](https://user-images.githubusercontent.com/80430372/124977553-9a661280-dffe-11eb-9550-46cccfaa3a24.PNG)
 
 
-## Considerations
+## <a name="considerations"></a>Considerations
 <!-- things we learned, things that went wrong -->
 Git offered some challenges. Working together on merging code from collaborators has been an engaging experience. Heroku produced some issues, namely capitalization errors and deployment problems. We worked together to resolve issues by bouncing ideas and learning together.
 
 
-## License Info
+## <a name="license-info"></a>License Info
 The MIT License is a permissive free software license originating at the Massachusetts Institute of Technology in the late 1980s. As a permissive license, it puts only very limited restriction on reuse and has, therefore, high license compatibility.
 
-## Contributors
+## <a name="contributors"></a>Contributors
 <!-- links to profiles here -->
 
 Adam Spiegel @ https://github.com/AdamSpiegel<br>
