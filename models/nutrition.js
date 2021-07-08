@@ -31,10 +31,6 @@ Nutrition.init({
         // unalterable, maybe have user enter time and date?
         // add a now feature
     },
-    food_log: {
-        type: DataTypes.STRING,
-        allowNull: true,
-    },
     caloric_intake: {
         type: DataTypes.INTEGER,
         allowNull: true,

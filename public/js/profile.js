@@ -30,16 +30,15 @@ const biometricsFormHandler = async (event) => {
     event.preventDefault();
 
     const weight = document.querySelector('#weight').value.trim();
-    const height = document.querySelector('#height').value.trim();
     const bloodpressure = document.querySelector('#blood-pressure').value.trim();
     const rhr = document.querySelector('#rhr').value.trim();
     const bmi = document.querySelector('#bmi').value.trim();
     const bodyfat = document.querySelector('#bodyfat').value.trim();
 
-    if (weight || height || bloodpressure || rhr || bmi || bodyfat) {
+    if (weight || bloodpressure || rhr || bmi || bodyfat) {
         const response = await fetch(`/api/biometrics`, {
             method: 'POST',
-            body: JSON.stringify({ weight, height, avg_blood_pressure, resting_heart_rate, bmi, body_fat }),
+            body: JSON.stringify({ weight, avg_blood_pressure, resting_heart_rate, bmi, body_fat }),
             headers: {
                 'Content-Type': 'application/json',
             },
@@ -64,7 +63,7 @@ const nutritionFormHandler = async (event) => {
     if (foodlog || water || calorie) {
         const response = await fetch(`/api/nutrition`, {
             method: 'POST',
-            body: JSON.stringify({ food_log, cups_water, caloric_intake }),
+            body: JSON.stringify({ nutrition_name, cups_water, caloric_intake }),
             headers: {
                 'Content-Type': 'application/json',
             },
