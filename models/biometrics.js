@@ -31,10 +31,6 @@ Biometrics.init({
         type: DataTypes.INTEGER,
         allowNull: true,
     },
-    height: {
-        type: DataTypes.INTEGER,
-        allowNull: true
-    },
     avg_blood_pressure: {
         type: DataTypes.STRING,
         allowNull: true,
