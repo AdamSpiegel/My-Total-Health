@@ -43,6 +43,7 @@
 //     }
 //     </script>
 
+// how to get chart to show up on page?
 
 
 
