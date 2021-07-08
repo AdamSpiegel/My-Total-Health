@@ -1,18 +1,17 @@
-// not sure how profile.js fits in with other parts?
-// what exactly does profile.js do?
-// below is modified from 28
-// do we need this page or is it redundant?
-const newFormHandler = async (event) => {
+//Form for submitting exercises
+const exerciseFormHandler = async (event) => {
     event.preventDefault();
 
-    const name = document.querySelector('#project-name-placeholder').value.trim();
-    const needed_funding = document.querySelector('#project-funding-placeholder').value.trim();
-    const description = document.querySelector('#project-desc-placeholder').value.trim();
-    // need help going thru lines 12 and 15
-    if (name && needed_funding && description) {
-        const response = await fetch(`/api/projects-placeholder`, {
+    const strength_training = document.querySelector('#strength-training').value.trim();
+    const cardio = document.querySelector('#cardio').value.trim();
+    const flexibility = document.querySelector('#flexibility').value.trim();
+    const mindset = document.querySelector('#mindset').value.trim();
+    const lifestyle = document.querySelector('#lifestyle').value.trim();
+
+    if (strength_training || cardio || flexibility || mindset || lifestyle) {
+        const response = await fetch(`/api/exercises`, {
             method: 'POST',
-            body: JSON.stringify({ name, needed_funding, description }),
+            body: JSON.stringify({ strength_training, cardio, flexibility, mindset, lifestyle }),
             headers: {
                 'Content-Type': 'application/json',
             },
@@ -21,31 +20,72 @@ const newFormHandler = async (event) => {
         if (response.ok) {
             document.location.replace('/profile');
         } else {
-            alert('Failed to create project');
+            alert('Failed to post exercise data');
         }
     }
 };
 
-const delButtonHandler = async (event) => {
-    if (event.target.hasAttribute('data-id')) {
-        const id = event.target.getAttribute('data-id');
+//Form for submitting biometrics
+const biometricsFormHandler = async (event) => {
+    event.preventDefault();
 
-        const response = await fetch(`/api/projects/${id}`, {
-            method: 'DELETE',
+    const weight = document.querySelector('#weight').value.trim();
+    const height = document.querySelector('#height').value.trim();
+    const bloodpressure = document.querySelector('#blood-pressure').value.trim();
+    const rhr = document.querySelector('#rhr').value.trim();
+    const bmi = document.querySelector('#bmi').value.trim();
+    const bodyfat = document.querySelector('#bodyfat').value.trim();
+
+    if (weight || height || bloodpressure || rhr || bmi || bodyfat) {
+        const response = await fetch(`/api/biometrics`, {
+            method: 'POST',
+            body: JSON.stringify({ weight, height, avg_blood_pressure, resting_heart_rate, bmi, body_fat }),
+            headers: {
+                'Content-Type': 'application/json',
+            },
         });
 
         if (response.ok) {
             document.location.replace('/profile');
         } else {
-            alert('Failed to delete project');
+            alert('Failed to post biometrics data');
+        }
+    }
+};
+
+//Form for submitting nutrition
+const nutritionFormHandler = async (event) => {
+    event.preventDefault();
+
+    const foodlog = document.querySelector('#food-log').value.trim();
+    const water = document.querySelector('#water').value.trim();
+    const calorie = document.querySelector('#calorie').value.trim();
+
+    if (foodlog || water || calorie) {
+        const response = await fetch(`/api/nutrition`, {
+            method: 'POST',
+            body: JSON.stringify({ food_log, cups_water, caloric_intake }),
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        });
+
+        if (response.ok) {
+            document.location.replace('/profile');
+        } else {
+            alert('Failed to post nutrition data');
         }
     }
 };
 
 document
-    .querySelector('.new-project-form')
-    .addEventListener('submit', newFormHandler);
+    .querySelector('.exercise-form')
+    .addEventListener('submit', exerciseFormHandler);
 
 document
-    .querySelector('.project-list')
-    .addEventListener('click', delButtonHandler);
+    .querySelector('.biometrics-form')
+    .addEventListener('submit', biometricsFormHandler);
+
+document
+    .querySelector('.nutrition-form')
+    .addEventListener('submit', nutritionFormHandler);
