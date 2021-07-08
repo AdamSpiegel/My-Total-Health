@@ -1,14 +1,9 @@
-// index.js is for pulling the other things together, but how is different from user.js?
-
-const User = require('./User');
+const User = require('./user');
 const Biometrics = require('./biometrics');
-const Exercises = require('./exercises');
-const Nutrition = require('./nutrition');
 const Exercise = require('./exercises');
+const Nutrition = require('./nutrition')
 
-// use 
-// build out index to show different connections
-// on delete cascade for all of them
+
 User.hasMany(Exercise, {
     foreignKey: 'user_id',
     onDelete: 'CASCADE'
@@ -36,4 +31,7 @@ Nutrition.belongsTo(User, {
     foreignKey: 'user_id'
 });
 
-module.exports = { User, Exercises, Biometrics, Nutrition };
+
+
+module.exports = { User, Exercise, Biometrics, Nutrition };
+

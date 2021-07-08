@@ -1,10 +1,10 @@
 const router = require('express').Router();
-const { Biometric } = require('../../models');
+const { Biometrics } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 router.post('/', withAuth, async (req, res) => {
   try {
-    const newWorkout = await Biometric.create({
+    const newWorkout = await Biometrics.create({
       ...req.body,
       user_id: req.session.user_id,
     });
@@ -17,7 +17,7 @@ router.post('/', withAuth, async (req, res) => {
 
 router.delete('/:id', withAuth, async (req, res) => {
   try {
-    const healthData = await Biometric.destroy({
+    const healthData = await Biometrics.destroy({
       where: {
         id: req.params.id,
         user_id: req.session.user_id,

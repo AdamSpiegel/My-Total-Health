@@ -1,0 +1,33 @@
+[
+  {
+    "bio_name": "Adam Spiegel",
+    "bio_description": "My first health/wellness log entry!",
+    "bio_date_created": "July 1, 2021",
+    "weight": "185",
+    "avg_blood_pressure": "120/80",
+    "resting_heart_rate": "66",
+    "BMI": "25",
+    "percent_body_fat": "11"
+  },
+
+  {
+    "bio_name": "Derek Jeter",
+    "bio_description": "Starting my retirement health tracker",
+    "bio_date_created": "July 1, 2021",
+    "weight": "195",
+    "avg_blood_pressure": "110/60",
+    "resting_heart_rate": "58",
+    "BMI": "24",
+    "percent_body_fat": "8"
+  },
+  {
+    "bio_name": "Eli Manning",
+    "bio_description": "Continuing my health and wellness log to put on muscle with a goal of coming out of retirement.",
+    "bio_date_created": "July 1, 2021",
+    "weight": "218",
+    "avg_blood_pressure": "130/70",
+    "resting_heart_rate": "72",
+    "BMI": "27",
+    "percent_body_fat": "14"
+  }
+]

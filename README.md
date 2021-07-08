@@ -28,9 +28,10 @@ The MIT License is a permissive free software license originating at the Massach
 
 ## Contributors
 <!-- links to profiles here -->
+
 Adam Spiegel @ https://github.com/AdamSpiegel<br>
 
-Eric Devine @ https://github.com/BigPorg<br>
+Eric Devine @ https://github.com/BigPorg <br>
 
 James O'Keefe @ https://github.com/j-okeefe<br>
 

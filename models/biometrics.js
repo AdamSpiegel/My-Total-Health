@@ -32,7 +32,7 @@ Biometrics.init({
         allowNull: false,
     },
     avg_blood_pressure: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: true,
     },
     resting_heart_rate: {
@@ -53,7 +53,7 @@ Biometrics.init({
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'project',
+        modelName: 'biometrics',
     })
 
 module.exports = Biometrics;

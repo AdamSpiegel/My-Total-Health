@@ -3,9 +3,9 @@ require('dotenv').config();
 
 let sequelize;
 
-
-if (process.env.healthtracker_db_URL) {
-  sequelize = new Sequelize(process.env.healthtracker_db_URL);
+// 7 and 8 take care of jaws db
+if (process.env.JAWSDB_URL) {
+  sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {
   sequelize = new Sequelize(
     process.env.DB_NAME,
