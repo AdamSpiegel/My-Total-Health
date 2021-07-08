@@ -43,10 +43,6 @@ Exercise.init({
         type: DataTypes.STRING,
         allowNull: true,
     },
-    lifestyle: {
-        type: DataTypes.STRING,
-        allowNull: true,
-    },
 },
     {
         sequelize,

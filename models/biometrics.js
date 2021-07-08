@@ -43,7 +43,7 @@ Biometrics.init({
         type: DataTypes.INTEGER,
         allowNull: true,
     },
-    body_fat: {
+    percent_body_fat: {
         type: DataTypes.INTEGER,
         allowNull: true,
     },
