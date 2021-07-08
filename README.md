@@ -3,7 +3,11 @@ A web application designed to help the user organize all aspects of their person
 
 ## Table of Contents
 <!-- fill out once everything else is finalized -->
-
+1. Description (#description)
+2. App & Screenshots (#deployed-app-&-screenshots)
+3. Considerations (#considerations)
+4. License (#license-info)
+5. Contributors (#contributors)
 
 ## Description
 My Total Health takes in user info on exercise, biometrics and nutritional data then saves it in a database where it can be accessed and compared over time.<br>
