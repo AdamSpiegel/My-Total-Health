@@ -14,7 +14,7 @@
 //         labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
 //         datasets: [{
 //             label: 'My Weight',
-//             data: [Need to pass user input here. How to?**],
+//             data: [Need to pass user input here. How to?** - FETCH CALL TO BACKEND WHEN CHART LOADS - API Route - ],
 //             backgroundColor: [
 //                 'rgba(255, 99, 132, 0.2)',
 //                 'rgba(54, 162, 235, 0.2)',
