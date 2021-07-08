@@ -1,3 +1,37 @@
+:root {
+    --boston-blue: #3D86AE;
+    --sea-buckthorn: #F8A538;
+    --gray-nurse: #ebeeeb;
+
+}
+
+header {
+    background-color: var(--gray-nurse);
+    text-decoration: none;
+}
+
 .title {
     font-family: 'Dancing Script', cursive;
+    color: var(--boston-blue);
+    font-size: 100px;
 }
+
+.total {
+    font-family: 'Dancing Script', cursive;
+    color: var(--sea-buckthorn)
+}
+
+.nav-link {
+    color: var(--boston-blue);
+    font-size: 20px;
+}
+
+a:hover.title {
+    text-decoration: none;
+}
+a:hover.nav-link{
+    text-decoration: none;
+    background-color: var(--sea-buckthorn);
+    border-radius: .5rem;
+}
+
