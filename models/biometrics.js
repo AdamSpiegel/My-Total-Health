@@ -39,7 +39,7 @@ Biometrics.init({
         type: DataTypes.INTEGER,
         allowNull: true,
     },
-    bmi: {
+    b_m_i: {
         type: DataTypes.INTEGER,
         allowNull: true,
     },
