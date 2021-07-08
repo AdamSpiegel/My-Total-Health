@@ -18,6 +18,9 @@ Deployed Link https://whispering-sea-14639.herokuapp.com/<br>
 
 Git Hub Link  https://github.com/AdamSpiegel/My-Total-Health<br>
 
+![screenshot]![snip 7-9](https://user-images.githubusercontent.com/80430372/124977553-9a661280-dffe-11eb-9550-46cccfaa3a24.PNG)
+
+
 ## Considerations
 <!-- things we learned, things that went wrong -->
 Git offered some challenges. Working together on merging code from collaborators has been an engaging experience. Heroku produced some issues, namely capitalization errors and deployment problems. We worked together to resolve issues by bouncing ideas and learning together.
