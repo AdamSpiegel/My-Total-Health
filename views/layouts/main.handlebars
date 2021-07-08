@@ -18,9 +18,13 @@
         <a href="/" class="title">My <span class="total">Total </span>Health</a>
       </h1>
       <nav class="nav text-center x-4">
-        <a class="nav-link p-1 ml-4 mr-4" href="/homepage">Homepage</a>
+        <a class="nav-link p-1 ml-4 mr-4" href="/homepage">Home</a>
         <a class="nav-link p-1 ml-4 mr-4" href="/profile">Profile</a>
+        {{#if logged_in}}
+        <button class="no-button nav-link" id="logout">Logout</button>
+        {{else}}
         <a class="nav-link p-1 ml-4 mr-4" href="/login">Login</a>
+        {{/if}}
       </nav>
     </header>
     <main class="container container-fluid mt-5">

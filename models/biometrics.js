@@ -29,7 +29,11 @@ Biometrics.init({
     // biometrics now?
     weight: {
         type: DataTypes.INTEGER,
-        allowNull: false,
+        allowNull: true,
+    },
+    height: {
+        type: DataTypes.INTEGER,
+        allowNull: true
     },
     avg_blood_pressure: {
         type: DataTypes.STRING,
@@ -39,13 +43,13 @@ Biometrics.init({
         type: DataTypes.INTEGER,
         allowNull: true,
     },
-    BMI: {
+    bmi: {
         type: DataTypes.INTEGER,
-        allowNull: false,
+        allowNull: true,
     },
-    percent_body_fat: {
+    body_fat: {
         type: DataTypes.INTEGER,
-        allowNull: false,
+        allowNull: true,
     },
 },
     {
